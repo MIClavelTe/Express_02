@@ -1,12 +1,6 @@
-doctype html
-html(lang="en")
-  head
-    title Flash Cards
-    style
-        include style.css
-  body
-    header
-        h1 Flash Cards
+extends layout.pug
+
+block content
     section#content
     h3= prompt
         if hint 
@@ -15,5 +9,3 @@ html(lang="en")
         else
             p 
                 i (No hint)
-    footer
-        p An app to help you study
